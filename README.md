@@ -59,9 +59,23 @@ Body:
 API:
 http://localhost:8080/allOrders
 
+In application.properties, i have
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=create-drop
+
+here
+ecommerce is db
+username is root
+password is root
+
+
 Note:
 This project has controller, service and dao layers
 controller recieves api hit from client, calls the service layer, gets the data and sends the data back to the client.
 service recieves call from controller, gets the data from dao, changes the data if necessary and sends the data to controller.
 dao recieves call from service and sends the data to service.
+
+
 
